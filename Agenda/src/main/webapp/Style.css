@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+	font-family: 'Open sans', 'sans-serif';
+	font-size: 1em;
+	font-weight: 400;
+	background-color: #A9A9A9;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+ /* width: 100%;
+  height: 100%;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #a1000e 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #a1000e 0,
+        #a1000e 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #a1000e 0,
+        #a1000e 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #a1000e 0,
+        #a1000e 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #a1000e 0,
+        #a1000e 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #a1000e 2%, #282828 0, #282828 98%, #a1000e 0%) 0 0
+      #282828;
+  background-size: 40px 60px;*/
+}
+
+
+.container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none; /* Allow clicking through the pattern layer */
+}
+
+h1{
+	color: black;
+	font-size: 3em;
+}
+
+.botao1{
+	text-decoration: none;
+	background-color: #ffffff;
+	padding: 5px 10px 5px 10px;
+	color: blue;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 15px; 
+	border: 0;
+	cursor: pointer;
+}
+
+.botoesAgenda1{
+	justify-content: center;
+	align-items: center;
+	list-style-type:none;
+	display:inline;
+
+}
+
+.Caixa1{
+	width:320px;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 60px 70px 40px 140px;
+}
+.Caixa2{
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 60px 70px 40px 140px;
+}
+
+#caixa3{
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid red;
+	border-radius: 15PX;
+	width: 25px;
+}
+
+.alinharmeio{
+	text-align: center;
+	width: 100vw;
+}
+
+.alinharmeio2{
+	align-items:center;
+}
+
+/*Tabela do agenda.jsp*/
+.tabela{
+    border-collapse: collapse; /*define a separação entre as bordar*/
+    padding: 10px;
+    text-align: left;
+    margin: 0vh 25vw 25vh 25vw;
+    width: 50%;
+	height: 50vh;
+}
+
+.tabela th{
+	color:white;
+	background-color: blue;
+	border-collapse: collapse; /*define a separação entre as bordar*/
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela td{
+    background-color: white;
+    border-collapse: collapse; /*define a separação entre as bordar*/
+    padding: 10px;
+    text-align: left;
+}
